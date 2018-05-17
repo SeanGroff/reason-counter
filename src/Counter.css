@@ -1,0 +1,81 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  height: 100vh;
+  width: 100%;
+}
+
+.counter--header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter--header,
+h1,
+h3 {
+  margin: 0;
+}
+
+.counter--header,
+h1 {
+  color: hsl(0, 0%, 21%);
+}
+
+.counter--header,
+h3 {
+  color: hsl(0, 0%, 29%);
+  margin-top: -4px;
+}
+
+.counter--actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+.counter--buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter--count {
+  color: hsl(217, 71%, 53%);
+  font-size: 128px;
+  margin: 32px 0;
+}
+
+.counter--btn {
+  color: #ffffff;
+  font-size: 24px;
+  padding: 8px 40px;
+  margin: 8px;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.counter--btn:active {
+  bottom: -2px;
+}
+
+.counter--btn-dec {
+  background-color: hsl(48, 100%, 67%);
+}
+
+button:disabled {
+  background-color: hsl(48, 80%, 67%);
+  cursor: initial;
+}
+
+.counter--btn-inc {
+  background-color: hsl(141, 71%, 48%);
+}
